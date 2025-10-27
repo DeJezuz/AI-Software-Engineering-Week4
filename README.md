@@ -1,45 +1,64 @@
-# # Week 4 Assignment: AI in Software Engineering 💻🤖
+# Week 4 — AI in Software Engineering
 
-**Theme:** Building Intelligent Software Solutions  
-**Student:** Gervásio MAGUL  
-**Institution:** IAE Nancy, University of Lorraine  
-**Scholarship:** French Government
+## Overview
+This repository contains the Week 4 assignment focused on building intelligent software solutions using AI. It includes theoretical analysis, practical implementations, and ethical reflections.
 
-## 📚 Objective
-This repository contains all deliverables for the Week 4 assignment, showcasing AI applications in software engineering through theoretical analysis, practical implementation, and ethical reflection.
+## Repository Structure
+- `code/`  
+  Contains all task scripts:  
+  - `task1_sorting.py` and `task1_sorting_manual.py` (sorting implementations)  
+  - `task1_tests.py` (unit tests for Task 1)  
+  - `task2_selenium_login.py` (automated login tests)  
+  - `task3_predictive.py` (predictive analytics demo)  
+- `report/`  
+  - `week4_report.md` (assignment report)  
+  - `figures/` (screenshots and generated images)  
+- `docs/`  
+  - `theoretical_answers.md`  
+  - `bonus_proposal.md`  
+- `.gitignore`  
+- `requirements.txt`  
+- `ci/` (optional GitHub Actions workflow)
 
----
+## Setup Instructions
+```bash
+git clone <your-repo-url>
+cd <repo-folder>
+python -m venv venv
+# macOS / Linux
+source venv/bin/activate
+# Windows (PowerShell)
+venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 
-## 📁 Contents
+Running the Tasks
+Task 1: Sorting Tests
+python code/task1_tests.py
 
-### 1. Report
-- 📄 [Week4_Assignment_Report.pdf](report/Week4_Assignment_Report.pdf)
+Task 2: Automated Login Tests
 
-### 2. Code
-- 🧠 Task 1: [AI-Powered Code Completion](code/task1_code_completion.py)
-- 🧪 Task 2: [Automated Testing with AI](code/task2_automated_testing/)
-- 📊 Task 3: [Predictive Analytics for Resource Allocation](code/task3_predictive_analytics.ipynb)
+Note: Update LOGIN_URL, selectors, and credentials in code/task2_selenium_login.py before running.
 
-### 3. Screenshots
-- 📸 [Test Results](screenshots/task2_test_results.png)
+python code/task2_selenium_login.py
 
-### 4. Bonus Proposal
-- 💡 [AutoDoc AI Tool Proposal](bonus/AutoDoc_AI_Proposal.md)
+Task 3: Predictive Analytics
+python code/task3_predictive.py
 
----
+Generating the Report PDF
 
-## 🛠️ Tools & Libraries
-- GitHub Copilot
-- Testim.io / Selenium IDE
-- Google Colab
-- Scikit-learn, Pandas
+Convert the markdown report to PDF using:
 
-## 📅 Deadline
-Submitted on: October 27, 2025
+pandoc report/week4_report.md -o report/week4_report.pdf
 
----
 
-## 📣 Notes
-- All code is well-commented and tested.
-- Ethical reflection included in the report.
-- No video demo required for this submission.
+Or print to PDF from any Markdown viewer.
+
+Notes
+Task 3 uses a synthetic 3-class priority mapping for demonstration; this is documented in the report.
+Selenium tests require proper configuration of URL and selectors.
+Placeholder images are included in report/figures/ if Selenium tests were not run.
+License
+
+Add a LICENSE file if you wish to specify reuse terms.
+
+Prepared for Week 4 AI in Software Engineering Assignment.
