@@ -5,5 +5,5 @@ selenium
 webdriver-manager
 matplotlib
 seaborn
-jupyter
 joblib
+pandoc                                               # optional, for PDF conversion if used
