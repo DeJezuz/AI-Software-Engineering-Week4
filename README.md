@@ -18,7 +18,8 @@ This repository contains the Week 4 assignment focused on building intelligent s
   - `bonus_proposal.md`  
 - `.gitignore`  
 - `requirements.txt`  
-- `ci/` (optional GitHub Actions workflow)
+- `ci/`
+  - `python-app.yml`
 
 ## Setup Instructions
 ```bash
